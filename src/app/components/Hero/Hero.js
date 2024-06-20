@@ -7,7 +7,7 @@ export default function Hero() {
     return (
         <section id="Hero" className="h-[90vh] w-full flex flex-col justify-center items-center text-center px-4 md:px-8 bg-black relative shadow-lg">
             <p className="text-base text-white font-semibold">FOCO EM QUALIDADE E RESULTADO</p>
-            <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-4 w-[40%] text-white pt-10">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 w-[40%] text-white pt-10">
                 Soluções inteligentes para empresas mais eficientes
             </h1>
             <p className="text-lg md:text-2xl mb-8 text-white pb-10 w-[20%] ">

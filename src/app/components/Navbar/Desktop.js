@@ -38,7 +38,6 @@ export default function Desktop() {
           <div className="flex items-center">
             <div className="text-lg font-bold">
               <Link href="/">
-                <Image src='/' width={48} height={48} alt="Logo" />
               </Link>
             </div>
           </div>

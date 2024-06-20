@@ -29,8 +29,6 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="flex flex-col items-center space-y-4 w-full md:w-2/5 order-2 md:order-1">
-                        <Image src='/logo4.svg' width={100} height={100} alt="logo" className="w-24 h-24 md:w-32 md:h-32" />
-                        <Image src='/name-logo-line.svg' width={100} height={60} alt="namelogo" className="w-40 h-16 md:w-56 md:h-24" />
                         <p className="text-center text-sm md:text-base">
                             Plataforma para você criar e gerenciar seus formulários
                             com segurança e praticidade.
