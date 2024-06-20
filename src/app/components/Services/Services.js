@@ -15,10 +15,10 @@ export default function Services(){
             </div>
             <div className="h-screen flex items-center justify-center">
                 <div className="relative w-full h-full max-w-screen-lg mx-auto">
-                    <div className="absolute left-0 top-24 md:w-[390px] h-[440px] bg-white shadow-lg rounded-lg p-8">
+                    <div className="absolute left-0 top-24 md:w-[350px] h-[400px] bg-white shadow-lg rounded-lg p-8">
                         <Test />
-                        <h3 className="font-bold text-xl">Desenvolvimento de Software</h3>
-                        <ul className="py-10 text-lg">
+                        <h3 className="font-bold text-lg">Desenvolvimento de Software</h3>
+                        <ul className="py-10 text-base">
                             <li className="flex mb-2">
                                 <Circle />
                                 <span className="pl-6">Foco em Soluções</span>
@@ -40,22 +40,22 @@ export default function Services(){
                                 <span className="pl-6">Inovação e Competitividade</span>
                             </li>
                         </ul>
-                        <button className="flex font-semibold">
+                        <button className="flex font-semibold text-sm">
                             <p className="pr-2">Saiba mais</p>                             
                             <ArrowRight />
                         </button>
                     </div>
-                    <div className="absolute top-24 right-0 md:w-[590px] h-[240px] bg-white shadow-lg rounded-lg px-8 flex ">
+                    <div className="absolute top-24 right-0 md:w-[650px] h-[200px] bg-white shadow-lg rounded-lg px-8 flex ">
                         <div className="flex-1 pt-8">
                             <Test />
-                            <h2 className="font-bold text-xl pb-10">Consultoria de Projetos</h2>
-                            <button className="flex font-semibold">
+                            <h2 className="font-bold text-lg ">Consultoria de Projetos</h2>
+                            <button className="flex font-semibold  text-sm">
                                 <p className="pr-2">Saiba mais</p>                             
                                 <ArrowRight />
                             </button>
                         </div>
                         <div className="flex-1">
-                            <ul className=" py-8 text-lg">
+                            <ul className=" py-8 text-base">
                                 <li className="flex mb-2">
                                     <Circle />
                                     <span className="pl-6">Otimização de Processos</span>
@@ -71,19 +71,17 @@ export default function Services(){
                             </ul>
                         </div>
                     </div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-black shadow-lg rounded-lg">
-                    </div>
-                    <div className="absolute bottom-20 left-0 md:w-[590px] h-[240px] bg-white shadow-lg rounded-lg p-8 flex">
+                    <div className="absolute bottom-0 left-0 md:w-[650px] h-[200px] bg-white shadow-lg rounded-lg p-8 flex">
                         <div className="flex-1">
                             <Test />
-                            <h2 className="font-bold text-xl pb-10">Algo mais aqui</h2>
-                            <button className="flex font-semibold">
+                            <h2 className="font-bold text-lg pb-10">Algo mais aqui</h2>
+                            <button className="flex font-semibold  text-sm">
                                 <p className="pr-2">Saiba mais</p>                             
                                 <ArrowRight />
                             </button>
                         </div>
                         <div className="flex-1">
-                            <ul className="py-8 text-lg">
+                            <ul className="py-8 text-base">
                                 <li className="flex mb-2">
                                     <Circle />
                                     <span className="pl-6">Item 1</span>
@@ -99,10 +97,10 @@ export default function Services(){
                             </ul>
                         </div>
                     </div>
-                    <div className="absolute bottom-20 right-0 md:w-[390px] h-[452px] bg-white shadow-lg rounded-lg p-8">
+                    <div className="absolute bottom-0 right-0 md:w-[350px] h-[400px] bg-white shadow-lg rounded-lg p-8">
                         <Test />
-                        <h3 className="font-bold text-xl">Alocação de Recursos</h3>
-                        <ul className="py-10 text-lg">
+                        <h3 className="font-bold text-lg">Alocação de Recursos</h3>
+                        <ul className="py-10 text-base">
                             <li className="flex mb-2">
                                 <Circle />
                                 <span className="pl-6">Especialização Técnica</span>
@@ -124,14 +122,14 @@ export default function Services(){
                                 <span className="pl-6">Não Interferência na Rotina</span>
                             </li>
                         </ul>
-                        <button className="flex font-semibold">
+                        <button className="flex font-semibold text-sm">
                             <p className="pr-2">Saiba mais</p>                             
                             <ArrowRight />
                         </button>
                     </div>
                 </div>                
             </div>
-            <div className="flex justify-center pb-20">
+            <div className="flex justify-center pb-20 mt-20">
                 <button>
                     <Link href="/" className="text-white text-xl py-4 px-8 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out gradient-bg font-semibold">                
                         Conheça todos nossos serviços               

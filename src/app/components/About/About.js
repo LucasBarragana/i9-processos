@@ -16,7 +16,7 @@ export default function About() {
                     <h2 className="mb-10 text-2xl font-base w-[80%] ">
                         Trabalhamos com profissionais altamente disruptivos e com foco na resolução de problemas.
                     </h2>
-                    <button className="px-4 py-2 bg-blue-500 text-white rounded">Evolua sua Empresa</button>
+                    <button className="text-white py-4 px-8 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out gradient-bg font-semibold">Evolua sua Empresa</button>
                 </div>
             </div>
         </section>

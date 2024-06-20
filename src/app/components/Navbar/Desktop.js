@@ -33,8 +33,8 @@ export default function Desktop() {
 
   return (
     <nav className="hidden lg:block">
-      <div className='fixed top-0 left-0 w-full z-50 h-[86px] bg-black text-white'>
-        <div className="mx-auto py-2 flex justify-between items-center px-20 mt-3">
+      <div className='fixed top-0 left-0 w-full z-50 h-[66px] bg-black  shadow-lg'>
+        <div className="mx-auto py-2 flex justify-between items-center max-w-7xl px-4 sm:px-6 lg:px-10">
           <div className="flex items-center">
             <div className="text-lg font-bold">
               <Link href="/">

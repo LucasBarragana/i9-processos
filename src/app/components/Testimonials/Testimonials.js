@@ -20,7 +20,7 @@ export default function Testimonials() {
     const { LogoEmpresa, Message, Responsable, Cargo } = messages[currentSlide];
 
     return (
-        <section id="Testimonials" className="h-[90vh] px-20 py-10 flex flex-col items-center">
+        <section id="Testimonials" className="h-[90vh] px-20 py-10 flex flex-col items-center mb-28">
             <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold text-blue-900 pt-10 w-[40%] flex justify-center items-center text-center mx-auto">
                 O que nossos parceiros tem a dizer sobre nossos serviços:
             </h1>

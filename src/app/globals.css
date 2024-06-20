@@ -8,6 +8,38 @@ body{
     box-sizing: border-box;
 }
 
+@layer utilities {
+  .custom-grid {
+    display: grid;
+    grid-template-areas:
+      "blue red"
+      "blue purple yellow"
+      "green green yellow";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .card-blue {
+    grid-area: blue;
+  }
+  .card-red {
+    grid-area: red;
+  }
+  .card-green {
+    grid-area: green;
+  }
+  .card-purple {
+    grid-area: purple;
+  }
+  .card-yellow {
+    grid-area: yellow;
+  }
+  .custom-grid > * {
+    border-radius: 1rem; /* Ajuste para bordas arredondadas */
+    border: 2px solid black; /* Apenas para visualizar os cartões */
+  }
+}
+
 /* ---------- DESKTOP NAVBAR  ---------- */
 
 
