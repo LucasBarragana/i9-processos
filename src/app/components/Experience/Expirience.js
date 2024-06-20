@@ -18,9 +18,9 @@ export default function Experience() {
     };
 
     return (
-        <section id="Expirience" className="h-[90vh] px-20 py-10 bg-blue-100 ">
-            <div className="clients flex h-full w-full rounded-lg">
-                <div className="w-[50%] h-full pt-10">
+        <section id="Expirience" className="h-auto px-20 py-10 bg-blue-100 ">
+            <div className="clients flex h-full w-full rounded-lg mb-10">
+                <div className="w-[50%] h-full pt-10 mb-20">
                     <h2 className="text-white text-center py-4 text-3xl font-semibold w-[50%] mx-auto mb-10">Clientes que confiam em nossos serviços</h2>
                     <div className="grid grid-cols-3 gap-8 w-[70%] mx-auto">
                         {slides[currentSlide].map((image, index) => (
@@ -43,27 +43,27 @@ export default function Experience() {
                     <h2 className="text-white text-center py-4 text-3xl font-semibold w-[50%] mx-auto mb-10">Experiência gera grandes resultados</h2>
                     <div className="grid grid-cols-2 gap-10 mt-4 w-[70%] mx-auto">
                         <div className="text-center">
-                            <h2 className="text-8xl text-white font-bold">+21</h2>
+                            <h2 className=" text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white font-bold">+21</h2>
                             <p className="text-xs text-white font-semibold">ANOS NO MERCADO</p>
                         </div>
                         <div className="text-center">
-                            <h2 className="text-8xl text-white font-bold">+72</h2>
+                            <h2 className=" text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white font-bold">+72</h2>
                             <p className="text-xs text-white font-semibold">TRABALHOS REALIZADOS</p>
                         </div>
                         <div className="text-center">
-                            <h2 className="text-8xl text-white font-bold">+17</h2>
+                            <h2 className=" text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white font-bold">+17</h2>
                             <p className="text-xs text-white font-semibold">EMPRESAS PARCEIRAS</p>
                         </div>
                         <div className="text-center">
-                            <h2 className="text-8xl text-white font-bold">+32</h2>
+                            <h2 className=" text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white font-bold">+32</h2>
                             <p className="text-xs text-white font-semibold">ESPECIALISTAS</p>
                         </div>
                         <div className="text-center">
-                            <h2 className="text-8xl text-white font-bold">+50<span className="text-4xl">%</span></h2>
+                            <h2 className=" text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white font-bold">+50<span className="text-4xl">%</span></h2>
                             <p className="text-xs text-white font-semibold">CRESCIMENTO EM PROJETOS</p>
                         </div>
                         <div className="text-center">
-                            <h2 className="text-8xl text-white font-bold">+90<span className="text-4xl">%</span></h2>
+                            <h2 className=" text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white font-bold">+90<span className="text-4xl">%</span></h2>
                             <p className="text-xs text-white font-semibold">SATISFAÇÃO DE CLIENTES</p>
                         </div>
                     </div>
