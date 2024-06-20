@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- DESKTOP NAVBAR  ---------- */
+
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; 
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #0000ff, #ff00ff); 
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-link.active::after {
+    width: 100%;
+  }
+
+
+/* ---------- Hero Section ---------- */
+
+/* ---------- Hero Section / Button (Facilite seu processo) ---------- */
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(270deg, #0000FF, #8A2BE2, #00007c);
+    background-size: 400% 400%;
+    animation: gradient 6s ease infinite;
+  }
+
+/* ---------- Hero Section / Button (rolar para baixo) ---------- */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+
+.clients{
+    background-color: #010139;
+}
+
+.expirience{
+    background-color: #17006D;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.contact{
+    background-color: white;
+}
+
+.contact:hover{
+    background: linear-gradient(270deg, #0000FF, #8A2BE2, #00007c);
+    background-size: 400% 400%;
+    animation: gradient 6s ease infinite;
+}
