@@ -36,7 +36,7 @@ const CarouselComponent = () => {
             <div key={index} className="card-container">
               <div className={getClass(index)}>
                 <Image src={msg.LogoEmpresa} width={66}  height={66} alt="Logo Empresa" />
-                <p className='italic mb-4'>"{msg.Message}"</p>
+                <p className='italic mb-4'>&ldquo{msg.Message}&ldquo</p>
                 <p className='font-bold'>{msg.Responsable}</p>
                 <p className='text-xs'>{msg.Cargo}</p>
               </div>
