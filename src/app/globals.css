@@ -6,38 +6,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@layer utilities {
-  .custom-grid {
-    display: grid;
-    grid-template-areas:
-      "blue red"
-      "blue purple yellow"
-      "green green yellow";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
-  }
-  .card-blue {
-    grid-area: blue;
-  }
-  .card-red {
-    grid-area: red;
-  }
-  .card-green {
-    grid-area: green;
-  }
-  .card-purple {
-    grid-area: purple;
-  }
-  .card-yellow {
-    grid-area: yellow;
-  }
-  .custom-grid > * {
-    border-radius: 1rem; /* Ajuste para bordas arredondadas */
-    border: 2px solid black; /* Apenas para visualizar os cartões */
-  }
+    background-color: #DBEAFE;
 }
 
 /* ---------- DESKTOP NAVBAR  ---------- */
@@ -46,7 +15,7 @@ body{
 .nav-link {
     position: relative;
     text-decoration: none;
-    color: white;
+    color: black;
     transition: color 0.3s;
   }
   
@@ -71,6 +40,10 @@ body{
 
 
 /* ---------- Hero Section ---------- */
+
+.backgroundHero{
+  border-radius: 20px;
+}
 
 /* ---------- Hero Section / Button (Facilite seu processo) ---------- */
 
@@ -129,4 +102,94 @@ body{
     background: linear-gradient(270deg, #0000FF, #8A2BE2, #00007c);
     background-size: 400% 400%;
     animation: gradient 6s ease infinite;
+}
+
+
+
+
+
+
+.lineDeal{
+  border-top-right-radius: 250px;
+  border-bottom-right-radius: 250px;
+}
+
+.deal{
+  border-top-right-radius: 246px;
+  border-bottom-right-radius: 246px;
+}
+
+
+
+
+
+
+
+
+
+
+.testimonials-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonial {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -4px 8px rgba(0, 0, 0, 0.1), 4px 0 8px rgba(0, 0, 0, 0.1), -4px 0 8px rgba(0, 0, 0, 0.1);
+  color: black;
+  opacity: 0.3; 
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 30%;
+}
+
+.testimonial.active {
+  opacity: 1; 
+}
+
+
+.card-container {
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: start;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+
+
+.card.left,
+.card.right {
+  opacity: 0.5; 
+}
+
+.card.center {
+  opacity: 1; 
+}
+
+
+.card-container:hover .card {
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+
+.logo{
+  border-radius: 50px;
+}
+
+.logo:hover{
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out, transform 0.5s ease-in-out;
 }

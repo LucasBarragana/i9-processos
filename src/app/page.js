@@ -5,16 +5,18 @@ import Experience from "./components/Experience/Expirience";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
-import Testimonials from "./components/Testimonials/Testimonials";
+import Soluctions from "./components/Soluctions/Soluctions";
+import PageTestimonials from "./components/Testimonials2/PageTestimonials";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="bg-blue-100">
       <Hero />
       <About />
       <Services />
+      <Soluctions />
       <Experience />
-      <Testimonials />
+      <PageTestimonials />
       <Contact />
       <Footer />
     </main>

@@ -33,8 +33,8 @@ export default function Desktop() {
 
   return (
     <nav className="hidden lg:block">
-      <div className='fixed top-0 left-0 w-full z-50 h-[66px] bg-black  shadow-lg'>
-        <div className="mx-auto py-2 flex justify-between items-center max-w-7xl px-4 sm:px-6 lg:px-10">
+      <div className='fixed top-0 left-0 w-full z-50 h-[66px] bg-white shadow-lg'>
+        <div className="mx-auto py-3 flex justify-between items-center max-w-7xl px-4 sm:px-6 lg:px-10">
           <div className="flex items-center">
             <div className="text-lg font-bold">
               <Link href="/">
@@ -62,9 +62,11 @@ export default function Desktop() {
             </Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Link href='#' className='flex justify-center align-center border rounded-md px-3 py-2 w-[45px] h-[45px]'>
-              <Image src='/question.svg' width={19} height={19} alt='Question Icon' />
-            </Link>
+            <button className='border border-black rounded-md px-3 py-2 hover:bg-gray-100'>
+              <Link href='#' className='flex justify-center items-center text-black'>
+                Entrar em contato
+              </Link>
+            </button>
           </div>
         </div>
       </div>

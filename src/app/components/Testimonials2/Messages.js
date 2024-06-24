@@ -2,25 +2,25 @@
 const messages = [
     {
         LogoEmpresa: "/logotest.jpg",
-        Message: "Nossos serviços evoluiram rapidamente depois de introduzirmos a I9 em nossos processos!",
+        Message: "Com a integração da I9 em nossa empresa vimos a importância de ter um trabalho expecializado para esta área. Fez toda diferença!",
         Responsable: "João Silva",
         Cargo: "CEO da empresa Exemplo Criado Atual"
     },
     {
         LogoEmpresa: "/logotest.jpg",
-        Message: "A I9 nos ajudou muito a fazer com que todo nosso processo ficasse mais rápido, resultados em melhores resultados para o cliente final",
+        Message: "Com a integração da I9 em nossa empresa vimos a importância de ter um trabalho expecializado para esta área. Fez toda diferença!",
         Responsable: "Maria Oliveira",
         Cargo: "CTO da empresa Exemplo Criado Atual"
     },
     {
         LogoEmpresa: "/logotest.jpg",
-        Message: "Depois de contratar a I9 vi um crescimento exponencial na aderencia de novos clientes!",
+        Message: "Com a integração da I9 em nossa empresa vimos a importância de ter um trabalho expecializado para esta área. Fez toda diferença!",
         Responsable: "Pedro Costa",
         Cargo: "COO da empresa Exemplo Criado Atual"
     },
     {
         LogoEmpresa: "/logotest.jpg",
-        Message: "A I9 ajudou nossa empresa a desenvolver processos mais eficientes e melhores!",
+        Message: "Com a integração da I9 em nossa empresa vimos a importância de ter um trabalho expecializado para esta área. Fez toda diferença!",
         Responsable: "Ana Lima",
         Cargo: "CFO da empresa Exemplo Criado Atual"
     },
@@ -32,31 +32,31 @@ const messages = [
     },
     {
         LogoEmpresa: "/logotest.jpg",
-        Message: "Parceria de sucesso.",
+        Message: "Com a integração da I9 em nossa empresa vimos a importância de ter um trabalho expecializado para esta área. Fez toda diferença!",
         Responsable: "Mariana Duarte",
         Cargo: "CMO da empresa Exemplo Criado Atual"
     },
     {
         LogoEmpresa: "/logotest.jpg",
-        Message: "Resultados acima do esperado.",
+        Message: "Com a integração da I9 em nossa empresa vimos a importância de ter um trabalho expecializado para esta área. Fez toda diferença!",
         Responsable: "Ricardo Pereira",
         Cargo: "CPO da empresa Exemplo Criado Atual"
     },
     {
         LogoEmpresa: "/logotest.jpg",
-        Message: "Recomendo fortemente!",
+        Message: "Com a integração da I9 em nossa empresa vimos a importância de ter um trabalho expecializado para esta área. Fez toda diferença!",
         Responsable: "Juliana Gomes",
         Cargo: "CHRO da empresa Exemplo Criado Atual"
     },
     {
         LogoEmpresa: "/logotest.jpg",
-        Message: "Melhor empresa do setor.",
+        Message: "Com a integração da I9 em nossa empresa vimos a importância de ter um trabalho expecializado para esta área. Fez toda diferença!",
         Responsable: "Lucas Fernandes",
         Cargo: "CSO da empresa Exemplo Criado Atual"
     },
     {
         LogoEmpresa: "/logotest.jpg",
-        Message: "Parceria de longa data.",
+        Message: "Com a integração da I9 em nossa empresa vimos a importância de ter um trabalho expecializado para esta área. Fez toda diferença!",
         Responsable: "Fernanda Ribeiro",
         Cargo: "CTO da empresa Exemplo Criado Atual"
     }

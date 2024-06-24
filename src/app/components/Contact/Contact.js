@@ -2,7 +2,7 @@
 
 export default function Contact() {
   return (
-    <section id="Contact" className="h-80vh flex justify-center items-center px-20 py-10">
+    <section id="Contact" className="h-80vh flex justify-center items-center px-20 pb-10">
       <div className="h-full w-full rounded-xl text-white bg-blue-900 flex justify-center items-center flex-col py-20">
         <h1 className="text-5xl text-center mb-8 w-[50%] font-bold">
             Traga o seu desafio de software para quem valoriza seu investimento
