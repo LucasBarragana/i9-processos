@@ -1,17 +1,25 @@
+'use client'
+
 'use client';
 
 import ArrowRight from "../icons/arrow-forward";
 import Circle from "../icons/circle";
 import Test from "../icons/test";
 
-export default function GridCards() {
+export default function GridCardsMobile() {
   return (
-    <div className="hidden sm:hidden  md:hidden lg:flex justify-center items-center h-auto px-20">
-      <div className="grid grid-rows-3 grid-flow-col gap-6">        
-        {/* Primeiro bloco */}
-        <div className="row-span-2 col-span-1 bg-white rounded-lg p-4 shadow-lg">
-          <Test />
-          <h3 className="font-bold text-lg">Desenvolvimento de Software</h3>
+    <div className="md:flex md:justify-center md:items-center md:h-auto lg:hidden">
+        <div className="block px-4 sm:px-8 md:px-10"> 
+            <div className="bg-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 rounded-lg p-4 shadow-lg mb-10">   
+        <div className="flex-1 p-4">
+            <Test />
+            <h2 className="font-bold text-lg pb-4">Algo mais aqui</h2>
+            <button className="flex font-semibold text-sm">
+              <p className="pr-2">Saiba mais</p>                             
+              <ArrowRight />
+            </button>
+          </div>
+          <div className="flex-1 p-4">
           <ul className="py-10 text-base">
             <li className="flex mb-2">
               <Circle />
@@ -34,14 +42,11 @@ export default function GridCards() {
               <span className="pl-6">Inovação e Competitividade</span>
             </li>
           </ul>
-          <button className="flex font-semibold text-sm">
-            <p className="pr-2">Saiba mais</p>                             
-            <ArrowRight />
-          </button>
+          </div>
+
         </div> 
         
-        {/* Segundo bloco */}
-        <div className="row-span-1 col-span-2 bg-white grid grid-cols-2 rounded-lg p-4 shadow-lg">
+        <div className="bg-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 rounded-lg p-4 shadow-lg mb-10"> 
           <div className="flex-1 p-4">
             <Test />
             <h2 className="font-bold text-lg pb-4">Algo mais aqui</h2>
@@ -69,7 +74,7 @@ export default function GridCards() {
         </div>
         
         {/* Terceiro bloco */}
-        <div className="row-span-1 col-span-2 bg-white   grid grid-cols-2  rounded-lg p-4 shadow-lg">
+        <div className="bg-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 rounded-lg p-4 shadow-lg mb-10"> 
           <div className="flex-1 pt-8">
             <Test />
             <h2 className="font-bold text-lg">Consultoria de Projetos</h2>
@@ -96,15 +101,18 @@ export default function GridCards() {
           </div>
         </div>
         
-        {/* Quarto bloco (espaço vazio) */}
-        <div className="row-span-1 col-span-1rounded-lg p-4 bg-blue-100 text-blue-100">
-          ----------------------------
-        </div>
         
         {/* Quinto bloco */}
-        <div className="row-span-2 col-span-1 bg-white rounded-lg p-4 shadow-lg">
-          <Test />
-          <h3 className="font-bold text-lg">Alocação de Recursos</h3>
+        <div className="bg-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 rounded-lg p-4 shadow-lg mb-10"> 
+          <div className="flex-1 pt-8">
+            <Test />
+            <h2 className="font-bold text-lg">Consultoria de Projetos</h2>
+            <button className="flex font-semibold text-sm">
+              <p className="pr-2">Saiba mais</p>                             
+              <ArrowRight />
+            </button>
+          </div>
+          <div className="flex-1">
           <ul className="py-10 text-base">
             <li className="flex mb-2">
               <Circle />
@@ -131,6 +139,7 @@ export default function GridCards() {
             <p className="pr-2">Saiba mais</p>                             
             <ArrowRight />
           </button>
+        </div>
         </div>
       
       </div>

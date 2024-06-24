@@ -64,6 +64,14 @@ export default function Desktop() {
           <div className="flex items-center space-x-4">
             <button className='border border-black rounded-md px-3 py-2 hover:bg-gray-100'>
               <Link href='#' className='flex justify-center items-center text-black'>
+                <Image
+                    src="/Whats.png"
+                    alt="Background Image"
+                    quality={100}
+                    width={24}
+                    height={24}
+                    className='mr-4'
+                />
                 Entrar em contato
               </Link>
             </button>
