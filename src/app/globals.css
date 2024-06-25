@@ -6,7 +6,10 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #DBEAFE;
+}
+
+.background-HAS{
+  background: linear-gradient(to bottom, #DBEAFE, #DBEAFE, #ffffff); 
 }
 
 /* ---------- DESKTOP NAVBAR  ---------- */
@@ -42,6 +45,10 @@ body{
 /* ---------- Hero Section ---------- */
 
 .backgroundHero{
+  border-radius: 20px;
+}
+
+.backgroundContact{
   border-radius: 20px;
 }
 
@@ -192,4 +199,27 @@ body{
 .logo:hover{
   transform: scale(1.2);
   transition: 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+.inclined-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.inclined-section::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 120%;
+  height: 140%;
+  background: inherit;
+  transform: rotate(-30deg);
+  z-index: -1;
 }

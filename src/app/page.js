@@ -10,10 +10,12 @@ import PageTestimonials from "./components/Testimonials2/PageTestimonials";
 
 export default function Home() {
   return (
-    <main className="bg-blue-100">
-      <Hero />
-      <About />
-      <Services />
+    <main className="">
+      <div className="background-HAS">
+        <Hero />
+        <About />
+        <Services />
+      </div>
       <Soluctions />
       <Experience />
       <PageTestimonials />

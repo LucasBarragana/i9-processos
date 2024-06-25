@@ -2,18 +2,25 @@
 
 export default function Contact() {
   return (
-    <section id="Contact" className="h-80vh flex justify-center items-center px-20 pb-10">
-      <div className="h-full w-full rounded-xl text-white bg-blue-900 flex justify-center items-center flex-col py-20">
-        <h1 className="text-5xl text-center mb-8 w-[50%] font-bold">
-            Traga o seu desafio de software para quem valoriza seu investimento
-        </h1>
-        <h2 className="text-xl text-center mb-8 w-[50%] ">
-            Seremos sua extensão transformadora e vamos desenvolver sua ideia em forma de uma solução segura, bem-sucedida e com toda a transparência no processo até a entrega.
-        </h2>
-        <div className="contact rounded-xl font-bold">
-          <button className="text-xl px-4 py-6 w-full h-full rounded-xl text-blue-900 rounded-xl hover:text-white transition-all duration-500 ease-in-out">
-            FALE COM NOSSOS ESPECIALISTAS
-          </button>
+    <section id="Contact" className="h-80vh relative mx-10 rounded-xl mb-10">
+      {/* Imagem de fundo */}
+      <div className="h-full bg-cover bg-center rounded-xl" style={{ backgroundImage: 'url("/contact-background.png")' }}>
+        {/* Gradiente linear sobre a imagem de fundo */}
+        <div className="absolute inset-0 bg-gradient-to-l from-blue-900 to-transparent rounded-xl"></div>
+        
+        {/* Conteúdo */}
+        <div className="h-full flex justify-end items-center px-4 lg:px-20 rounded-xl py-20">
+          <div className="w-full lg:w-2/6 text-white z-10 pr-10">
+            <h1 className="text-sm lg:text-2xl text-left mb-4 lg:mb-8 font-bold">
+              Traga o seu desafio de software para quem valoriza seu investimento
+            </h1>
+            <h2 className="text-sm lg:text-base text-left mb-4 lg:mb-8">
+              Seremos sua extensão transformadora e vamos desenvolver sua ideia em forma de uma solução segura, bem-sucedida e com toda a transparência no processo até a entrega.
+            </h2>
+            <button className=" text-xs md:text-base text-white py-2 md:py-2 px-2 md:px-4 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out gradient-bg font-medium">
+              Entre em Contato
+            </button>
+          </div>
         </div>
       </div>
     </section>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import images from "./Images";
+import GridPattern from "./GridPatterns";
 
 export default function Experience() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -18,8 +19,9 @@ export default function Experience() {
     };
 
     return (
-        <section id="Expirience" className="h-80vh px-20 py-10 bg-blue-100 ">
-            <div className="clients flex h-full w-full rounded-lg mb-10">
+        <section id="Expirience" className="h-80vh px-20 py-10 bg-gray-100 -skew-y-2">            
+            <GridPattern className="absolute inset-0 z-0" />
+            <div className="clients flex h-full w-full rounded-lg mb-10 skew-y-2 z-10">
                 <div className="w-[50%] h-full pt-10 mb-10">
                     <h2 className="text-white text-center py-4 text-3xl font-semibold w-[50%] mx-auto mb-10">Clientes que confiam em nossos serviços</h2>
                     <div className="grid grid-cols-3 gap-8 w-[70%] mx-auto">

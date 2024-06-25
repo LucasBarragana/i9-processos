@@ -34,7 +34,7 @@ export default function GridCards() {
               <span className="pl-6">Inovação e Competitividade</span>
             </li>
           </ul>
-          <button className="flex font-semibold text-sm">
+          <button className="flex font-medium text-sm">
             <p className="pr-2">Saiba mais</p>                             
             <ArrowRight />
           </button>
@@ -45,7 +45,7 @@ export default function GridCards() {
           <div className="flex-1 p-4">
             <Test />
             <h2 className="font-bold text-lg pb-4">Algo mais aqui</h2>
-            <button className="flex font-semibold text-sm">
+            <button className="flex font-medium text-sm">
               <p className="pr-2">Saiba mais</p>                             
               <ArrowRight />
             </button>
@@ -73,7 +73,7 @@ export default function GridCards() {
           <div className="flex-1 pt-8">
             <Test />
             <h2 className="font-bold text-lg">Consultoria de Projetos</h2>
-            <button className="flex font-semibold text-sm">
+            <button className="flex font-medium text-sm">
               <p className="pr-2">Saiba mais</p>                             
               <ArrowRight />
             </button>
@@ -97,7 +97,7 @@ export default function GridCards() {
         </div>
         
         {/* Quarto bloco (espaço vazio) */}
-        <div className="row-span-1 col-span-1rounded-lg p-4 bg-blue-100 text-blue-100">
+        <div className="row-span-1 col-span-1rounded-lg p-4 bg-gray-100 text-gray-100">
           ----------------------------
         </div>
         
@@ -127,7 +127,7 @@ export default function GridCards() {
               <span className="pl-6">Não Interferência na Rotina</span>
             </li>
           </ul>
-          <button className="flex font-semibold text-sm">
+          <button className="flex font-medium text-sm">
             <p className="pr-2">Saiba mais</p>                             
             <ArrowRight />
           </button>
