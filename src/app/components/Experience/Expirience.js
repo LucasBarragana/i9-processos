@@ -19,8 +19,9 @@ export default function Experience() {
     };
 
     return (
-        <section id="Expirience" className="h-80vh px-20 py-10 bg-gray-100 -skew-y-2">            
+        <section id="Expirience" className="h-80vh px-20 py-10 bg-gray-100 -skew-y-2 hidden">         
             <GridPattern className="absolute inset-0 z-0" />
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-top from-white to-transparent opacity-100 z-10"></div>   
             <div className="clients flex h-full w-full rounded-lg mb-10 skew-y-2 z-10">
                 <div className="w-[50%] h-full pt-10 mb-10">
                     <h2 className="text-white text-center py-4 text-3xl font-semibold w-[50%] mx-auto mb-10">Clientes que confiam em nossos serviços</h2>

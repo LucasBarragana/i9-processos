@@ -1,7 +1,5 @@
 'use client'
 
-'use client';
-
 import ArrowRight from "../icons/arrow-forward";
 import Circle from "../icons/circle";
 import Test from "../icons/test";

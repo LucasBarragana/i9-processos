@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -31,49 +31,46 @@ export default function Desktop() {
     };
   }, []);
 
+  const smoothScrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 50, 
+        behavior: 'smooth',
+      });
+    }
+  };
+
+
   return (
-    <nav className="hidden lg:block">
-      <div className='fixed top-0 left-0 w-full z-50 h-[66px] bg-white shadow-lg'>
-        <div className="mx-auto py-3 flex justify-between items-center max-w-7xl px-4 sm:px-6 lg:px-10">
+    <nav className="hidden lg:block bg-blue-900 max-w-screen-2xl">
+      <div className='fixed w-auto top-2 z-50 h-[52px] bg-white shadow-lg mx-10 rounded-full px-28'>
+        <div className="py-2 flex justify-between items-center px-4 sm:px-6 lg:px-10 ">
           <div className="flex items-center">
             <div className="text-lg font-bold">
               <Link href="/">
               </Link>
             </div>
           </div>
-          <div className="hidden md:flex space-x-8">
-            <Link href="#Hero" className={`nav-link ${activeSection === 'Hero' ? 'active' : ''}`}>
+          <div className="hidden md:flex space-x-28">
+            <button className={`nav-link ${activeSection === 'Hero' ? 'active' : ''}`} onClick={() => smoothScrollToSection('Hero')}>
               Início
-            </Link>
-            <Link href="#About" className={`nav-link ${activeSection === 'About' ? 'active' : ''}`}>
+            </button>
+            <button className={`nav-link ${activeSection === 'About' ? 'active' : ''}`} onClick={() => smoothScrollToSection('About')}>
               Sobre
-            </Link>
-            <Link href="#Services" className={`nav-link ${activeSection === 'Services' ? 'active' : ''}`}>
+            </button>
+            <button className={`nav-link ${activeSection === 'Services' ? 'active' : ''}`} onClick={() => smoothScrollToSection('Services')}>
               Serviços
-            </Link>
-            <Link href="#Expirience" className={`nav-link ${activeSection === 'Expirience' ? 'active' : ''}`}>
+            </button>
+            <div><Image src="/Logoi9.png" alt='logo' width={48} height={48} className='animate-spin w-8 h-8'/></div>
+            <button className={`nav-link ${activeSection === 'Expirience' ? 'active' : ''}`} onClick={() => smoothScrollToSection('Expirience')}>
               Experiência
-            </Link>
-            <Link href="#Testimonials" className={`nav-link ${activeSection === 'Testimonials' ? 'active' : ''}`}>
+            </button>
+            <button className={`nav-link ${activeSection === 'Testimonials' ? 'active' : ''}`} onClick={() => smoothScrollToSection('Testimonials')}>
               Testemunhos
-            </Link>
-            <Link href="#Contact" className={`nav-link ${activeSection === 'Contact' ? 'active' : ''}`}>
+            </button>
+            <button className={`nav-link ${activeSection === 'Contact' ? 'active' : ''}`} onClick={() => smoothScrollToSection('Contact')}>
               Contato
-            </Link>
-          </div>
-          <div className="flex items-center space-x-4">
-            <button className='border border-black rounded-md px-3 py-2 hover:bg-gray-100'>
-              <Link href='#' className='flex justify-center items-center text-black'>
-                <Image
-                    src="/Whats.png"
-                    alt="Background Image"
-                    quality={100}
-                    width={24}
-                    height={24}
-                    className='mr-4'
-                />
-                Entrar em contato
-              </Link>
             </button>
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 export default function Contact() {
   return (
-    <section id="Contact" className="h-80vh relative mx-10 rounded-xl mb-10">
+    <section id="Contact" className="h-80vh relative mx-10 rounded-xl mb-10 ">
       {/* Imagem de fundo */}
       <div className="h-full bg-cover bg-center rounded-xl" style={{ backgroundImage: 'url("/contact-background.png")' }}>
         {/* Gradiente linear sobre a imagem de fundo */}

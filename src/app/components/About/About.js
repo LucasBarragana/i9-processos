@@ -4,9 +4,9 @@ import Image from "next/image"
 
 export default function About() {
     return (
-        <section id="About" className="flex h-80vh w-full bg-blue-100">
+        <section id="About" className="flex h-80vh w-full">
             <div className="block md:flex w-full h-full mt-20">
-                <div className="lineDeal w-full md:w-1/3 h-full relative pr-4 py-4 border border-black">
+                <div className="lineDeal w-full md:w-1/3 h-full relative pr-4 py-4 border-8 border-blue-100 ">
                     <Image
                         src="/deal1.jpg"
                         alt="Descrição da imagem"
@@ -15,8 +15,7 @@ export default function About() {
                         className="deal w-400 h-400"
                     />
                 </div>
-                {/* Div com conteúdo ocupando 2/3 do width */}
-                <div className="w-full md:w-2/3 h-full flex flex-col justify-center items-center text-center px-10 md:px-20">
+                <div className="w-full md:w-2/3 h-full flex flex-col justify-center items-center text-center px-10 md:px-20 text-white">
                     <h3 className="mb-4 font-medium text-xs sm:text-base md:text-base">A evolução para seu projeto está aqui</h3>
                     <h1 className="mb-10 text-lg sm:text-xl md:text-3xl font-medium">
                         Somos uma empresa de desenvolvimento de software e outsourcing, sempre atualizada com as tendências 

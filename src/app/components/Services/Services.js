@@ -6,7 +6,7 @@ import GridCardsMobile from "../Teste3/Teste3";
 
 export default function Services() {
     return (
-        <section id="Services" className="relative bg-gray-100 -skew-y-2 mt-20">
+        <section id="Services" className="relative bg-gray-100 -skew-y-2 mt-20 hidden">
             <div className="relative z-10  skew-y-2">
                 <div className="pt-20">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-black pt-10 w-[80%] md:w-[60%] lg:w-[50%] flex justify-center items-center text-center mx-auto mb-10">

@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '700'] });
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
         <Navbar />
         {children}
-        </body>
+      </body>
     </html>
   );
 }

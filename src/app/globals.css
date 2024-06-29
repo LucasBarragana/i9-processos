@@ -6,10 +6,11 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #030022; 
 }
 
 .background-HAS{
-  background: linear-gradient(to bottom, #DBEAFE, #DBEAFE, #ffffff); 
 }
 
 /* ---------- DESKTOP NAVBAR  ---------- */
@@ -40,6 +41,19 @@ body{
   .nav-link.active::after {
     width: 100%;
   }
+
+.Logo{
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
 /* ---------- Hero Section ---------- */
@@ -129,6 +143,25 @@ body{
 
 
 
+.buttons{
+  background-color: #0058DC;
+  font-size: 15px;
+}
+
+.buttons li{
+  background-color: white;
+  color: #030022;
+  }
+
+.content-services{
+  background-color: #030022;
+}
+
+.content-services .cards{
+  color: #030022;
+}
+
+
 
 
 
@@ -205,21 +238,21 @@ body{
 
 
 
+.cards{
 
-
-.inclined-section {
-  position: relative;
-  overflow: hidden;
 }
 
-.inclined-section::before {
-  content: '';
-  position: absolute;
-  top: -20%;
-  left: -10%;
-  width: 120%;
-  height: 140%;
-  background: inherit;
-  transform: rotate(-30deg);
-  z-index: -1;
+.card3{
+  scale: 1;
+  z-index: 30;
+}
+
+.card24{
+  scale:0.9;
+  z-index: 20;
+}
+
+.card15{
+  scale:0.75;
+  z-index: 10;
 }

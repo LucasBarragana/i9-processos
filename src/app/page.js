@@ -1,24 +1,30 @@
 
 import About from "./components/About/About";
+import Tecs from "./components/About/Tecs";
+import Anonimous from "./components/Anonimous/Anonimous";
+import HomePage from "./components/Cards/CarouselPage";
 import Contact from "./components/Contact/Contact";
 import Experience from "./components/Experience/Expirience";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
-import Services from "./components/Services/Services";
+import HomePartners from "./components/Partners/HomePartners";
+import Services2 from "./components/Services/Services2";
 import Soluctions from "./components/Soluctions/Soluctions";
-import PageTestimonials from "./components/Testimonials2/PageTestimonials";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="max-w-screen-2xl box-border">
       <div className="background-HAS">
         <Hero />
         <About />
-        <Services />
+        <Tecs />
+        <Services2 />
       </div>
+      <Anonimous />
       <Soluctions />
       <Experience />
-      <PageTestimonials />
+      <HomePage />
+      <HomePartners />
       <Contact />
       <Footer />
     </main>
