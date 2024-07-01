@@ -1,7 +1,5 @@
 'use client'
 
-// components/Carousel.js
-
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -11,7 +9,6 @@ import Card from './Card';
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // Exemplo de dados dos cards (substitua com seus dados reais)
     const cards = [
         { id: 1, stars: 4, title: 'ROBERTO FERREIRA', description: '“ Com a integração da i9 em nossa empresa vimos a importância de ter um trabalho especializado para esta área.Fez toda a diferença!', imageUrl: "/pb.png" },
         { id: 2, stars: 4, title: 'ROBERTO FERREIRA', description: '“ Com a integração da i9 em nossa empresa vimos a importância de ter um trabalho especializado para esta área.Fez toda a diferença!', imageUrl: "/pb.png" },
@@ -20,14 +17,13 @@ const Carousel = () => {
         { id: 5, stars: 4, title: 'ROBERTO FERREIRA', description: '“ Com a integração da i9 em nossa empresa vimos a importância de ter um trabalho especializado para esta área.Fez toda a diferença!', imageUrl: "/pb.png" },
     ];
 
-    // Atualiza o índice atual quando o carousel muda de slide
     const handleSlideChange = index => {
         setCurrentIndex(index);
     };
 
-    // Configurações do Slider
     const settings = {
         dots: true,
+        arrows:false,
         infinite: true,
         speed: 500,
         slidesToShow: 5,
@@ -35,7 +31,7 @@ const Carousel = () => {
         autoplay: true,
         autoplaySpeed: 3000,
         cssEase: 'linear',
-        rtl: true, // Movimento da direita para a esquerda
+        rtl: true, 
         beforeChange: (current, next) => handleSlideChange(next),
         responsive: [
             {
@@ -58,7 +54,7 @@ const Carousel = () => {
     return (
         <Slider {...settings}>
             {cards.map((card, index) => (
-                <div key={card.id} className='py-20 '>
+                <div key={card.id} className='py-10'>
                     <Card
                         title={card.title}
                         description={card.description}
@@ -72,29 +68,23 @@ const Carousel = () => {
     );
 };
 
-// Função auxiliar para determinar a posição dinâmica do card
 const getDynamicPosition = (cardIndex, currentIndex, totalCards) => {
-    // Calcula a posição do card relativa ao currentIndex
     let position = currentIndex + cardIndex + 1;
-
-    // Ajusta para que position seja positivo e dentro do range de totalCards
     if (position < 0) {
         position += totalCards;
     }
 
-    // Calcula a posição baseada em 1 (primeiro card tem posição 1, segundo card tem posição 2, etc.)
-    // Neste caso, queremos estilizar o card de acordo com sua posição fixa, independente de sua posição real no carousel
     switch (position % totalCards) {
         case 0:
         case 5:
-            return 1; // Estilização para posição 1 e 5
+            return 1; 
         case 2:
         case 4:
-            return 2; // Estilização para posição 2 e 4
+            return 2; 
         case 3:
-            return 3; // Estilização para posição 3
+            return 3; 
         default:
-            return totalCards; // Fallback para o último card, se necessário
+            return totalCards;
     }
 };
 

@@ -6,7 +6,7 @@ export default function About() {
     return (
         <section id="About" className="flex h-80vh w-full">
             <div className="block md:flex w-full h-full mt-20">
-                <div className="lineDeal w-full md:w-1/3 h-full relative pr-4 py-4 border-8 border-blue-100 ">
+                <div className="lineDeal w-full md:w-1/3 h-full relative pr-4 py-4 border-r-8 border-t-8 border-b-8 border-blue-100 ">
                     <Image
                         src="/deal1.jpg"
                         alt="Descrição da imagem"

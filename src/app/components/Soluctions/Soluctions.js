@@ -1,6 +1,8 @@
 'use client'
 
 import Image from 'next/image';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 export default function Soluctions() {
     return (
@@ -23,18 +25,46 @@ export default function Soluctions() {
                         </p>
                     </div>
                     <div className='grid grid-cols-2 gap-4'>
-                        <div className='flex  space-x-4'>
-                            <div className='flex items-center justify-center rounded-full w-28 h-14 px-4 py-9 bg-gray-100 text-black border-4 border-blue-900 font-semibold text-xl'>95%</div>
+                        <div className='flex space-x-4'>
+                            <div className='relative'>
+                                <CircularProgressbar
+                                    value={95}
+                                    text={`95%`}
+                                    styles={buildStyles({
+                                        pathColor: `#1e3a8a`,
+                                        textColor: '#000',
+                                        trailColor: '#d1d5db',
+                                        backgroundColor: '#f3f4f6',
+                                    })}
+                                />
+                                <div className='absolute inset-0 flex items-center justify-center'>
+                                    <div className='flex items-center justify-center rounded-full w-28 h-14 bg-gray-100 text-black border-4 border-blue-900 font-semibold text-xl'>95%</div>
+                                </div>
+                            </div>
                             <div>
                                 <h2 className='text-blue-500'>Crescimento empresarial</h2>
-                                <p className='text-white  text-xs  mt-4'>Transite ideias de primeira linha com eficiência antes do mercado</p>
+                                <p className='text-white text-xs mt-4'>Transite ideias de primeira linha com eficiência antes do mercado</p>
                             </div>
                         </div>
-                        <div className='flex  space-x-4'>
-                            <div className='flex items-center justify-center rounded-full w-28 h-14 px-4 py-9 bg-gray-100 text-black border-4 border-blue-900 font-semibold text-xl'>95%</div>
+                        <div className='flex space-x-4'>
+                            <div className='relative'>
+                                <CircularProgressbar
+                                    value={95}
+                                    text={`95%`}
+                                    styles={buildStyles({
+                                        pathColor: `#1e3a8a`,
+                                        textColor: '#000',
+                                        trailColor: '#d1d5db',
+                                        backgroundColor: '#f3f4f6',
+                                    })}
+                                />
+                                <div className='absolute inset-0 flex items-center justify-center'>
+                                    <div className='flex items-center justify-center rounded-full w-28 h-14 bg-gray-100 text-black border-4 border-blue-900 font-semibold text-xl'>95%</div>
+                                </div>
+                            </div>
                             <div>
                                 <h2 className='text-blue-500'>Crescimento empresarial</h2>
-                                <p className='text-white  text-xs  mt-4'>Transite ideias de primeira linha com eficiência antes do mercado</p>
+                                <p className='text-white text-xs mt-4'>Transite ideias de primeira linha com eficiência antes do mercado</p>
                             </div>
                         </div>
                     </div>

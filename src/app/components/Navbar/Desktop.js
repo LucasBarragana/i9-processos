@@ -44,6 +44,7 @@ export default function Desktop() {
 
   return (
     <nav className="hidden lg:block bg-blue-900 max-w-screen-2xl">
+      <div className='fixed w-full top-0 z-50 h-[8px] bg-gray-900'></div>
       <div className='fixed w-auto top-2 z-50 h-[52px] bg-white shadow-lg mx-10 rounded-full px-28'>
         <div className="py-2 flex justify-between items-center px-4 sm:px-6 lg:px-10 ">
           <div className="flex items-center">

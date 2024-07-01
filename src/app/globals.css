@@ -143,23 +143,34 @@ body{
 
 
 
-.buttons{
+.buttons {
   background-color: #0058DC;
   font-size: 15px;
 }
 
-.buttons li{
+.buttons li {
   background-color: white;
   color: #030022;
-  }
+}
 
-.content-services{
+.buttons li.active {
+  background-color: #030022;
+  color: white;
+  border-top: 4px solid #FAFAFA;
+  border-left: 4px solid #FAFAFA;
+  border-right: 4px solid #FAFAFA;
+  border-radius: 12px 12px 0 0;
+  transform: translateY(12px);
+}
+
+.content-services {
   background-color: #030022;
 }
 
-.content-services .cards{
+.content-services .cards {
   color: #030022;
 }
+
 
 
 
@@ -238,6 +249,10 @@ body{
 
 
 
+.card3, .card24, .card15 {
+  transition: scale 0.9s ease-in-out, filter 0.9s ease-in-out, z-index 0.9s ease-in-out;
+}
+
 .cards{
 
 }
@@ -250,9 +265,26 @@ body{
 .card24{
   scale:0.9;
   z-index: 20;
+  filter: blur(2px);
 }
 
 .card15{
   scale:0.75;
   z-index: 10;
+  filter: blur(4px);
+}
+
+
+
+/* Customizando as setas */
+.slick-prev, .slick-next {
+  width: 40px; /* Largura das setas */
+  height: 40px; /* Altura das setas */
+  z-index: 1; /* Mantém as setas na frente dos slides */
+}
+
+/* Customizando o conteúdo das setas */
+.slick-prev:before, .slick-next:before {
+  font-size: 40px; /* Aumenta o tamanho do ícone das setas */
+  color: blue; /* Muda a cor das setas */
 }
