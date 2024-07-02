@@ -14,12 +14,10 @@ import Soluctions from "./components/Soluctions/Soluctions";
 export default function Home() {
   return (
     <main className="max-w-screen-2xl box-border">
-      <div className="background-HAS">
-        <Hero />
-        <About />
-        <Tecs />
-        <Services2 />
-      </div>
+      <Hero />
+      <About />
+      <Tecs />
+      <Services2 />
       <Anonimous />
       <Soluctions />
       <Experience />

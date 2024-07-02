@@ -11,7 +11,7 @@ export default function Soluctions() {
                 Nos relacionamos com o ecossistema da sua <br />
                 empresa para inovar e atingir resultados extraordinários
             </h1>
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-8">
                 <div className="">
                     <div className='mb-10'>
                         <h1 className='text-2xl font-medium mb-6 text-white'>Mais De 24 Anos De Experiência, Oferecemos Serviços De TI</h1>
@@ -24,21 +24,23 @@ export default function Soluctions() {
                             enquanto redes padronizadas.
                         </p>
                     </div>
-                    <div className='grid grid-cols-2 gap-4'>
+                    <div className='grid lg:grid-cols-2 gap-4'>
                         <div className='flex space-x-4'>
                             <div className='relative'>
                                 <CircularProgressbar
-                                    value={95}
-                                    text={`95%`}
+                                    value={90}
+                                    text={`90%`}
                                     styles={buildStyles({
                                         pathColor: `#1e3a8a`,
-                                        textColor: '#000',
-                                        trailColor: '#d1d5db',
+                                        textColor: 'transparent', // Hide the default text
+                                        trailColor: 'transparent',
                                         backgroundColor: '#f3f4f6',
                                     })}
                                 />
                                 <div className='absolute inset-0 flex items-center justify-center'>
-                                    <div className='flex items-center justify-center rounded-full w-28 h-14 bg-gray-100 text-black border-4 border-blue-900 font-semibold text-xl'>95%</div>
+                                    <div className='flex items-center justify-center rounded-full w-24 h-24  bg-gray-100 text-black font-semibold text-2xl'>
+                                        90%
+                                    </div>
                                 </div>
                             </div>
                             <div>
@@ -49,17 +51,19 @@ export default function Soluctions() {
                         <div className='flex space-x-4'>
                             <div className='relative'>
                                 <CircularProgressbar
-                                    value={95}
-                                    text={`95%`}
+                                    value={90}
+                                    text={`90%`}
                                     styles={buildStyles({
                                         pathColor: `#1e3a8a`,
-                                        textColor: '#000',
-                                        trailColor: '#d1d5db',
+                                        textColor: 'transparent', // Hide the default text
+                                        trailColor: 'transparent',
                                         backgroundColor: '#f3f4f6',
                                     })}
                                 />
                                 <div className='absolute inset-0 flex items-center justify-center'>
-                                    <div className='flex items-center justify-center rounded-full w-28 h-14 bg-gray-100 text-black border-4 border-blue-900 font-semibold text-xl'>95%</div>
+                                <div className='flex items-center justify-center rounded-full w-24 h-24  bg-gray-100 text-black font-semibold text-2xl'>
+                                        90%
+                                    </div>
                                 </div>
                             </div>
                             <div>
@@ -69,7 +73,7 @@ export default function Soluctions() {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center lg:justify-end">
                     <Image src="/Subtract2.png" alt="fundo" width={500} height={500} className="h-auto" />
                 </div>
             </div>

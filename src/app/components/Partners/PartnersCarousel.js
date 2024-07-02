@@ -17,9 +17,10 @@ export default function PartnersCarousel(){
 
     // Configurações do Slider
     const settings = {
-        dots: false,
+        dots: false,        
+        arrows:false,
         infinite: true,
-        speed: 1000,
+        speed: 2000,
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
@@ -45,10 +46,10 @@ export default function PartnersCarousel(){
     };
 
     return(
-        <section className='bg-gray-100 rounded-full mb-10 px-20  mx-20'>
+        <section className='bg-gray-100 rounded-full mb-10 px-10  mx-10'>
             <Slider {...settings}>
                 {cards.map(card => (
-                    <div key={card.id} className='pt-6'>
+                    <div key={card.id} className=''>
                         <Card title={card.title} description={card.description} imageUrl={card.imageUrl} />
                     </div>
                 ))}

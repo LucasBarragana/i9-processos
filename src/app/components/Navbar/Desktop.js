@@ -35,45 +35,54 @@ export default function Desktop() {
     const element = document.getElementById(id);
     if (element) {
       window.scrollTo({
-        top: element.offsetTop - 50, 
+        top: element.offsetTop - 50,
         behavior: 'smooth',
       });
     }
   };
 
-
   return (
     <nav className="hidden lg:block bg-blue-900 max-w-screen-2xl">
       <div className='fixed w-full top-0 z-50 h-[8px] bg-gray-900'></div>
-      <div className='fixed w-auto top-2 z-50 h-[52px] bg-white shadow-lg mx-10 rounded-full px-28'>
-        <div className="py-2 flex justify-between items-center px-4 sm:px-6 lg:px-10 ">
-          <div className="flex items-center">
-            <div className="text-lg font-bold">
-              <Link href="/">
-              </Link>
-            </div>
-          </div>
-          <div className="hidden md:flex space-x-28">
-            <button className={`nav-link ${activeSection === 'Hero' ? 'active' : ''}`} onClick={() => smoothScrollToSection('Hero')}>
-              Início
-            </button>
-            <button className={`nav-link ${activeSection === 'About' ? 'active' : ''}`} onClick={() => smoothScrollToSection('About')}>
-              Sobre
-            </button>
-            <button className={`nav-link ${activeSection === 'Services' ? 'active' : ''}`} onClick={() => smoothScrollToSection('Services')}>
-              Serviços
-            </button>
-            <div><Image src="/Logoi9.png" alt='logo' width={48} height={48} className='animate-spin w-8 h-8'/></div>
-            <button className={`nav-link ${activeSection === 'Expirience' ? 'active' : ''}`} onClick={() => smoothScrollToSection('Expirience')}>
-              Experiência
-            </button>
-            <button className={`nav-link ${activeSection === 'Testimonials' ? 'active' : ''}`} onClick={() => smoothScrollToSection('Testimonials')}>
-              Testemunhos
-            </button>
-            <button className={`nav-link ${activeSection === 'Contact' ? 'active' : ''}`} onClick={() => smoothScrollToSection('Contact')}>
-              Contato
-            </button>
-          </div>
+      <div className='fixed w-[95%] top-2 z-50 h-[52px] mx-8 px-10 bg-white shadow-lg rounded-full flex items-center justify-between'>
+        <div className="flex items-center justify-between w-full">
+          <button
+            className={`nav-link ${activeSection === 'Hero' ? 'active' : ''} mx-2`}
+            onClick={() => smoothScrollToSection('Hero')}
+          >
+            Início
+          </button>
+          <button
+            className={`nav-link ${activeSection === 'About' ? 'active' : ''} mx-2`}
+            onClick={() => smoothScrollToSection('About')}
+          >
+            Sobre
+          </button>
+          <button
+            className={`nav-link ${activeSection === 'Services' ? 'active' : ''} mx-2`}
+            onClick={() => smoothScrollToSection('Services')}
+          >
+            Serviços
+          </button>
+          <div className="mx-2"><Image src="/Logoi9.png" alt='logo' width={48} height={48} className='' /></div>
+          <button
+            className={`nav-link ${activeSection === 'Expirience' ? 'active' : ''} mx-2`}
+            onClick={() => smoothScrollToSection('Expirience')}
+          >
+            Experiência
+          </button>
+          <button
+            className={`nav-link ${activeSection === 'Testimonials' ? 'active' : ''} mx-2`}
+            onClick={() => smoothScrollToSection('Testimonials')}
+          >
+            Testemunhos
+          </button>
+          <button
+            className={`nav-link ${activeSection === 'Contact' ? 'active' : ''} mx-2`}
+            onClick={() => smoothScrollToSection('Contact')}
+          >
+            Contato
+          </button>
         </div>
       </div>
     </nav>

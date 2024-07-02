@@ -5,7 +5,7 @@ import Mobile from "./Mobile"
 
 export default function Navbar(){
   return(
-    <div className="h-auto">
+    <div className="">
       <Desktop />
       <Mobile />
     </div>

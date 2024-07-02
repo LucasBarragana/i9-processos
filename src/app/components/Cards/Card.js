@@ -1,7 +1,3 @@
-'use client'
-
-// components/Card.js
-
 import React from 'react';
 
 const Card = ({ title, description, imageUrl, position, stars }) => {
@@ -17,17 +13,17 @@ const Card = ({ title, description, imageUrl, position, stars }) => {
     }
 
     return (
-        <div className=''>
+        <div className='mx-auto max-w-7xl'>
             <div className={cardClass}>
                 <div>
-                    <img src={imageUrl} alt={title} className=" absolute -top-5 -right-5 h-24 w-24 object-cover mb-4 rounded-lg" />
+                    <img src={imageUrl} alt={title} className="absolute -top-5 -right-5 h-24 w-24 object-cover mb-4 rounded-lg" />
                 </div>
                 <div className='absolute left-4 top-0 h-full w-6 bg-blue-900'></div>
                 <div className='px-10 pt-10'>
                     <h2 className='text-base font-medium'>Feedbacks dos nossos clientes</h2>
-                    <div className='w-full h-1 bg-blue-900 '></div>
+                    <div className='w-full h-1 bg-blue-900'></div>
                     <div className="flex mb-2 w-full ">
-                        {Array.from({length: stars}).map((_, i) => (
+                        {Array.from({ length: stars }).map((_, i) => (
                             <span key={i} className="text-yellow-500 text-4xl">★</span>
                         ))}
                         {Array.from({ length: 5 - stars }).map((_, i) => (
@@ -37,7 +33,6 @@ const Card = ({ title, description, imageUrl, position, stars }) => {
                     <h2 className="text-sm font-base mb-2">{title}</h2>
                     <p className="text-gray-600 text-xs">{description}</p>
                 </div>
-
             </div>
         </div>
     );
