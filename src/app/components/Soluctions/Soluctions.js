@@ -6,7 +6,7 @@ import 'react-circular-progressbar/dist/styles.css';
 
 export default function Soluctions() {
     return (
-        <section className="px-20 py-20">
+        <section className="h-auto w-[100vw] px-60 py-20  hidden lg:block">
             <h1 className="text-2xl font-semibold mb-20 text-center text-white">
                 Nos relacionamos com o ecossistema da sua <br />
                 empresa para inovar e atingir resultados extraordinários
@@ -14,7 +14,7 @@ export default function Soluctions() {
             <div className="grid lg:grid-cols-2 gap-8">
                 <div className="">
                     <div className='mb-10'>
-                        <h1 className='text-2xl font-medium mb-6 text-white'>Mais De 24 Anos De Experiência, Oferecemos Serviços De TI</h1>
+                        <h1 className='text-2xl font-semibold mb-6 text-customPurple300'>Mais De 24 Anos De Experiência, Oferecemos Serviços De TI</h1>
                         <p className='text-white'>
                             Visualize colaborativamente cadeias de
                             suprimentos amigáveis ​​ao usuário e imperativo
@@ -37,14 +37,14 @@ export default function Soluctions() {
                                         backgroundColor: '#f3f4f6',
                                     })}
                                 />
-                                <div className='absolute inset-0 flex items-center justify-center'>
-                                    <div className='flex items-center justify-center rounded-full w-24 h-24  bg-gray-100 text-black font-semibold text-2xl'>
+                                <div className='absolute inset-0 flex items-center justify-center -top-[1.5em] '>
+                                    <div className='flex items-center justify-center rounded-full w-[80px] h-[80px]   bg-customBlue100 text-white font-semibold text-2xl'>
                                         90%
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <h2 className='text-blue-500'>Crescimento empresarial</h2>
+                                <h2 className='text-xl text-customPurple300 font-bold'>Crescimento empresarial</h2>
                                 <p className='text-white text-xs mt-4'>Transite ideias de primeira linha com eficiência antes do mercado</p>
                             </div>
                         </div>
@@ -55,19 +55,19 @@ export default function Soluctions() {
                                     text={`90%`}
                                     styles={buildStyles({
                                         pathColor: `#1e3a8a`,
-                                        textColor: 'transparent', // Hide the default text
+                                        textColor: 'transparent', 
                                         trailColor: 'transparent',
                                         backgroundColor: '#f3f4f6',
                                     })}
                                 />
-                                <div className='absolute inset-0 flex items-center justify-center'>
-                                <div className='flex items-center justify-center rounded-full w-24 h-24  bg-gray-100 text-black font-semibold text-2xl'>
+                                <div className='absolute inset-0 flex items-center justify-center -top-[1.5em]'>
+                                    <div className='flex items-center justify-center rounded-full w-[80px] h-[80px]   bg-customBlue100 text-white font-semibold text-2xl'>
                                         90%
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <h2 className='text-blue-500'>Crescimento empresarial</h2>
+                                <h2 className='text-xl text-customPurple300 font-bold'>Crescimento empresarial</h2>
                                 <p className='text-white text-xs mt-4'>Transite ideias de primeira linha com eficiência antes do mercado</p>
                             </div>
                         </div>

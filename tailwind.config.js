@@ -9,7 +9,9 @@ module.exports = {
     extend: {      
       colors: {
         customBlue: '#030022',
-        bustompurple100:'808CF5'
+        customBlue100:'#808CF5',
+        customPurple300:'#512885',
+        customPurple100:'#9F53FF'
       },
     },
   },

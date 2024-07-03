@@ -1,9 +1,8 @@
-import { Poppins } from "next/font/google";
+import { Blinker } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '700'] });
-<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+const blinker = Blinker({ subsets: ['latin'], weight: ['400', '600', '700', '900'] });
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>     
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body className={blinker.className}>     
         <Navbar />
         {children}
       </body>

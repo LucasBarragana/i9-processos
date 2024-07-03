@@ -53,9 +53,6 @@ export default function Footer() {
                                         <Image src="/inst.svg" alt="inst" width={26} height={26} />
                                     </Link>
                                     <Link href="/">
-                                        <Image src="/face.svg" alt="face" width={16} height={16} />
-                                    </Link>
-                                    <Link href="/">
                                         <Image src="/linkdn.svg" alt="linkdn" width={26} height={26} />
                                     </Link>
                                 </div>

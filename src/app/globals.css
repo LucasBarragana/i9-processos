@@ -7,8 +7,10 @@ body{
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: #030022; 
+    background-color: #9F53FF;
+    overflow-x: hidden;
 }
+
 
 
 /* ---------- DESKTOP NAVBAR  ---------- */
@@ -142,7 +144,7 @@ body{
 
 
 .buttons {
-  background-color: #0058DC;
+  background-color: #9F53FF;
   font-size: 15px;
 }
 
@@ -152,80 +154,21 @@ body{
 }
 
 .buttons li.active {
-  background-color: #030022;
+  background-color: #512885;
   color: white;
   border-top: 4px solid #FAFAFA;
   border-left: 4px solid #FAFAFA;
   border-right: 4px solid #FAFAFA;
   border-radius: 12px 12px 0 0;
-  transform: translateY(12px);
+  transform: translateY(13px);
 }
 
 .content-services {
-  background-color: #030022;
+  background-color: #512885;
 }
 
 .content-services .cards {
   color: #030022;
-}
-
-
-
-
-
-
-
-
-
-.testimonials-container {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-}
-
-.testimonial {
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -4px 8px rgba(0, 0, 0, 0.1), 4px 0 8px rgba(0, 0, 0, 0.1), -4px 0 8px rgba(0, 0, 0, 0.1);
-  color: black;
-  opacity: 0.3; 
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  text-align: center;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 30%;
-}
-
-.testimonial.active {
-  opacity: 1; 
-}
-
-
-.card-container {
-  padding: 10px;
-}
-
-.card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 50px;
-  text-align: start;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-
-
-.card.left,
-.card.right {
-  opacity: 0.5; 
-}
-
-.card.center {
-  opacity: 1; 
-}
-
-
-.card-container:hover .card {
-  animation-play-state: paused;
 }
 
 
@@ -270,16 +213,3 @@ body{
 }
 
 
-
-/* Customizando as setas */
-.slick-prev, .slick-next {
-  width: 40px; /* Largura das setas */
-  height: 40px; /* Altura das setas */
-  z-index: 1; /* Mantém as setas na frente dos slides */
-}
-
-/* Customizando o conteúdo das setas */
-.slick-prev:before, .slick-next:before {
-  font-size: 40px; /* Aumenta o tamanho do ícone das setas */
-  color: blue; /* Muda a cor das setas */
-}

@@ -42,10 +42,10 @@ export default function Desktop() {
   };
 
   return (
-    <nav className="hidden lg:block bg-blue-900 max-w-screen-2xl">
+    <nav className="hidden lg:block w-[100vw]">
       <div className='fixed w-full top-0 z-50 h-[8px] bg-gray-900'></div>
-      <div className='fixed w-[95%] top-2 z-50 h-[52px] mx-8 px-10 bg-white shadow-lg rounded-full flex items-center justify-between'>
-        <div className="flex items-center justify-between w-full">
+      <div className='fixed w-full top-2 z-50 h-[52px] bg-white shadow-lg flex items-center justify-between px-20'>
+        <div className="flex items-center justify-between w-full px-10">
           <button
             className={`nav-link ${activeSection === 'Hero' ? 'active' : ''} mx-2`}
             onClick={() => smoothScrollToSection('Hero')}
