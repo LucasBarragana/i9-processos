@@ -2,7 +2,7 @@
 
 export default function Contact() {
   return (
-    <section id="Contact" className="h-80vh relative mx-10 rounded-xl mb-10 ">
+    <section id="Contact" className="h-[70vh] relative mx-10 rounded-xl mb-10 ">
       <div className="h-full bg-cover bg-center rounded-xl" style={{ backgroundImage: 'url("/contact-background.png")' }}>
         <div className="absolute inset-0 bg-gradient-to-l from-black to-transparent rounded-xl"></div>
         <div className="h-full flex justify-end items-center px-4 lg:px-20 rounded-xl xl:py-40">
