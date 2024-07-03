@@ -44,8 +44,8 @@ export default function Desktop() {
   return (
     <nav className="hidden lg:block w-[100vw]">
       <div className='fixed w-full top-0 z-50 h-[8px] bg-gray-900'></div>
-      <div className='fixed w-full top-2 z-50 h-[52px] bg-white shadow-lg flex items-center justify-between px-20'>
-        <div className="flex items-center justify-between w-full px-10">
+      <div className='fixed w-full top-2 z-50 h-[79px] bg-white shadow-lg flex items-center justify-between px-20'>
+        <div className="flex items-center justify-between w-full px-10 text-xl">
           <button
             className={`nav-link ${activeSection === 'Hero' ? 'active' : ''} mx-2`}
             onClick={() => smoothScrollToSection('Hero')}
@@ -64,7 +64,7 @@ export default function Desktop() {
           >
             Serviços
           </button>
-          <div className="mx-2"><Image src="/Logoi9.png" alt='logo' width={48} height={48} className='' /></div>
+          <div className="mx-2"><Image src="/Logoi9.png" alt='logo' width={64} height={64} className='' /></div>
           <button
             className={`nav-link ${activeSection === 'Expirience' ? 'active' : ''} mx-2`}
             onClick={() => smoothScrollToSection('Expirience')}

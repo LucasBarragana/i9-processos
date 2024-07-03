@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="bg-gray-100 rounded-2xl mx-10 py-4 mb-4">
                 <div className="md:px-20">
                     <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between align-center ">
-                        <div className="flex flex-row justify-around order-1 md:order-3 gap-6">
+                        <div className="flex flex-row justify-around order-1 md:order-3 gap-6 mt-10">
                             <div className="mb-4 md:mb-0 ">
                                 <h2 className=" mb-2 text-sm md-text-base lg:text-base font-semibold">Páginas</h2>
                                 <Link href='#' className="block text-xs mb-2 md:text-xs hover:text-pink-500">Início</Link>
@@ -30,7 +30,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="text-xs md:order-2">
-                            <div>
+                            <div className="mt-10">
                                 <div className="flex mb-4">
                                     <Image src="/local.svg" alt="address" width={16} height={16} />
                                     <p className="ml-2">Estrada do Rio de Janeiro km 25, Vila Rio – Rio de Janeiro / RJ</p>
@@ -59,7 +59,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="flex flex-col items-center space-y-4 w-full md:w-1/4 order-2 md:order-1">
-                            <Image src="/Logoi9all.png" alt="logo" width={86} height={86} />
+                            <Image src="/Logoi9all.png" alt="logo" width={186} height={186} />
                             <p className="text-center text-sm md:text-xs">
                                 Quer conversar sobre seu projeto?
                             </p>

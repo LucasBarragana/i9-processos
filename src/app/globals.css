@@ -66,6 +66,16 @@ body{
   border-radius: 20px;
 }
 
+.hero-background {
+  background-image: url('/fundo3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+
 /* ---------- Hero Section / Button (Facilite seu processo) ---------- */
 
 @keyframes gradient {

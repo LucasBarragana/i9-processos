@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import ArrowDown from "../icons/arrow-bottom";
-import Image from "next/image";
 
 export default function Hero() {
     const smoothScrollToSection = (id) => {
@@ -16,15 +15,15 @@ export default function Hero() {
     };
 
     return (
-        <section id="Hero" className="pt-20 h-[90vh] w-[100vw] px-8 sm:px-10 lg:px-20  ">
-            <div className="h-full rounded-xl" style={{ backgroundImage: "url('/fundo3.jpg')", backgroundPosition: 'center' }}>
+        <section id="Hero" className="pt-20 h-[90vh] w-[100vw] px-8 sm:px-10 lg:px-20">
+            <div className={`hero-background`}>
                 <div className="h-full w-full flex flex-col justify-center items-start relative">
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-customBlue to-transparent opacity-100 rounded-3xl"></div>
                     <div className="z-10 mx-20">
                         <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-6xl font-bold mb-4  w-full md:w-[60%]  lg:w-[50%] text-white pt-10">
                             Soluções inteligentes para empresas mais eficientes
                         </h1>
-                        <p className="text-sm sm:text-base md:text-lg lg:xl mb-8 text-white pb-10 w-full sm:w-[80%] md:w-[60%] lg:w-[40%] ">
+                        <p className="text-sm sm:text-base md:text-lg lg:xl mb-8 text-white pb-10 w-full sm:w-[80%] md:w-[60%] lg:w-[40%]">
                             Estamos comprometidos em desenvolver
                             soluções digitais sob medida, focadas não
                             apenas em tecnologia, mas principalmente
@@ -41,7 +40,6 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-
         </section>
     );
 }

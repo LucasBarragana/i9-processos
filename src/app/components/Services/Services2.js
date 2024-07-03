@@ -1,10 +1,11 @@
-'use client'
+'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function Services2() {
     const [activeIndex, setActiveIndex] = useState(0);
+    const [alignment, setAlignment] = useState('left');
 
     const services = [
         {
@@ -41,22 +42,30 @@ export default function Services2() {
         }
     ];
 
+    useEffect(() => {
+        if (activeIndex < 4) {
+            setAlignment('left');
+        } else {
+            setAlignment('right');
+        }
+    }, [activeIndex]);
+
     const handleButtonClick = (index) => {
         setActiveIndex(index);
     };
 
     return (
-        <section id="Services2" className=" relative w-[100vw] px-10 bg-gray-100 -skew-y-3 mt-14 py-20 hidden lg:block" 
+        <section id="Services2" className="relative w-[100vw] px-10 bg-gray-200 -skew-y-3 mt-14 py-20 hidden lg:block" 
                  style={{ backgroundImage: "url('/fundo-services.png')", backgroundPosition: 'center' }}>
-            <div className="absolute w-100 inset-0 bg-gradient-to-b from-white to-transparent "></div>
-            <div className="relative skew-y-3 text-3xl text-center pb-14">
+            <div className="absolute w-100 h-60 inset-0 bg-gradient-to-b from-white to-transparent "></div>
+            <div className="relative skew-y-3 text-4xl text-center pb-14">
                 <h1>Conheça nossa suíte de soluções empresariais</h1>
                 <p>Tudo organizado para potencializar os seus resultados.</p>
             </div>
             <div className="relative">
                 <ul className="buttons flex justify-between mx-10 rounded-lg px-4 py-2">
                     {["Desenvolvimento de software", "Consultoria e gestão de projetos", "Outsourcing", "SurveyPro", "NextSuite", "Rifa Fácil", "I9 Car", "RP"].map((text, index) => (
-                        <li key={index} className={`flex-1 flex items-center justify-center px-2 py-2 mx-2 rounded-lg text-md font-medium ${activeIndex === index ? 'active' : ''}`}>
+                        <li key={index} className={`flex-1 flex items-center justify-center px-2 py-2 mx-2 rounded-lg text-lg font-medium ${activeIndex === index ? 'active' : ''}`}>
                             <button onClick={() => handleButtonClick(index)} className="text-center">
                                 {text.split(' ').map((line, i) => (
                                     <React.Fragment key={i}>
@@ -69,11 +78,11 @@ export default function Services2() {
                     ))}
                 </ul>
             </div>
-            <div className="content-services relative mt-1 mx-10 rounded-lg ">
-                <div className="skew-y-3 grid grid-cols-2 gap-20 px-10 pt-14 pb-6 mx-14 text-white">
+            <div className={`content-services relative mt-1 mx-10 rounded-lg w-[70%] ${alignment === 'left' ? 'ml-10' : 'ml-auto'}`}>
+                <div className="skew-y-3 grid grid-cols-2 gap-20 px-10 pt-14 pb-6 text-white">
                     <div className='text-white'>
-                        <h1 className="text-3xl mb-10 font-semibold">{services[activeIndex].title}</h1>
-                        <p className='text-lg'>{services[activeIndex].description}</p>
+                        <h1 className="text-4xl mb-10 font-semibold">{services[activeIndex].title}</h1>
+                        <p className='text-xl'>{services[activeIndex].description}</p>
                     </div>
                     <div>
                         <div className="grid grid-cols-2 gap-8 mb-4 z-1">
@@ -93,8 +102,7 @@ export default function Services2() {
                     </div>
                 </div>
             </div>
-            <div className="relative skew-y-3 bg-customPurple300 mx-10 rounded-lg h-24 -top-12 ">
-            </div>
+            <div className={`relative skew-y-3 bg-customPurple300 mx-10 rounded-lg h-24 -top-14 w-[70%] ${alignment === 'left' ? 'ml-10' : 'ml-auto'}`} style={{ zIndex: -1 }}></div>
         </section>
     );
 }
