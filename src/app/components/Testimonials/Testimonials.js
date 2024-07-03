@@ -3,7 +3,7 @@
 import React from 'react';
 import Carousel from './Carousel';
 
-const HomePage = () => {
+const Testimonials = () => {
     return (
         <div className="relative items-center mt-10 pb-20 h-[80vh] w-[100vw] px-10 bg-gray-100 skew-y-3" style={{ backgroundImage: "url('/fundo-testimonials.png')", backgroundPosition: 'center' }}>
             <div className='absolute inset-0 bg-gradient-to-b from-white to-transparent'></div>
@@ -17,4 +17,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Testimonials;

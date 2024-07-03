@@ -1,8 +1,8 @@
 
 import About from "./components/About/About";
 import Tecs from "./components/About/Tecs";
-import Anonimous from "./components/Anonimous/Anonimous";
-import HomePage from "./components/Cards/CarouselPage";
+import Possibilits from "./components/Possibilits/Possibilits";
+import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
@@ -17,9 +17,9 @@ export default function Home() {
       <About />
       <Tecs />
       <Services2 />
-      <Anonimous />
+      <Possibilits />
       <Soluctions />
-      <HomePage />
+      <Testimonials />
       <HomePartners />
       <Contact />
       <Footer />
