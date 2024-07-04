@@ -8,11 +8,11 @@ import Card from './CardPartners';
 
 export default function PartnersCarousel(){
     const cards = [
-        { id: 1,imageUrl: '/Farmacias.png' },
-        { id: 2,imageUrl: '/totvs2.png' },
-        { id: 3,imageUrl: '/softplan.png' },
-        { id: 4,imageUrl: '/digix.png' },
-        { id: 5,imageUrl: '/somos.png' },
+        { id: 1,imageUrl: '/Farmacias.svg' },
+        { id: 2,imageUrl: '/totvs.svg' },
+        { id: 3,imageUrl: '/softplan.svg' },
+        { id: 4,imageUrl: '/digix.svg' },
+        { id: 5,imageUrl: '/somos.svg' },
     ];
 
     // Configurações do Slider
@@ -46,7 +46,7 @@ export default function PartnersCarousel(){
     };
 
     return(
-        <section className='bg-gray-100 rounded-full mb-20 px-10'>
+        <section className='bg-white rounded-full mb-20 px-10'>
             <Slider {...settings}>
                 {cards.map(card => (
                     <div key={card.id} className=''>

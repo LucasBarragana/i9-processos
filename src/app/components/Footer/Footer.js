@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function Footer() {
     return (
         <section id="Footer" className=" text-black ">
-            <div className="bg-gray-100 rounded-2xl mx-10 py-4 mb-4">
+            <div className="bg-customBlue100 rounded-[50px] mx-10 py-4 mb-4">
                 <div className="md:px-20">
                     <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row justify-between align-center ">
                         <div className="flex flex-row justify-around order-1 md:order-3 gap-6 mt-10">

@@ -5,45 +5,49 @@ import Image from "next/image"
 export default function Tecs() {
     return (
         <section className="w-[100vw] px-10 text-center my-20">
-            <h1 className="lg:text-3xl font-bold mb-8 text-white">
+            <h1 className="lg:text-[40px] font-bold mb-8 text-white">
                 MELHORAR E INOVAR COM AS TENDÊNCIAS <br />
                 TECNOLÓGICAS
             </h1>
-            <div className="flex justify-center">
-                <div>
-                    <div className="grid grid-cols-4 gap-10 pr-10 sm:gap-20 sm:pr-20 md:gap-30 md:pr-30 lg:gap-40 lg:pr-40">
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative group">
-                            <Image src="/tec1.png" layout="responsive" width={98} height={98} alt="tec1" className="mx-auto transition-transform transform group-hover:scale-110" />
+            <div className="flex justify-center items-center align-center">
+                <div className="">
+                    <div className="grid grid-cols-5 gap-[187px] mr-40">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-[32] lg:h-[32] relative group">
+                            <Image src="/html.svg" layout="responsive" width={98} height={98} alt="tec1" className="mx-auto transition-transform transform group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
                         </div>
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative group">
-                            <Image src="/tec3.png" layout="responsive" width={98} height={98} alt="tec3" className="mx-auto transition-transform transform group-hover:scale-110" />
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-[32] lg:h-[32] relative group">
+                            <Image src="/github.svg" layout="responsive" width={98} height={98} alt="tec3" className="mx-auto transition-transform transform group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
                         </div>
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative group">
-                            <Image src="/tec5.png" layout="responsive" width={98} height={98} alt="tec5" className="mx-auto transition-transform transform group-hover:scale-110" />
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-[32] lg:h-[32] relative group">
+                            <Image src="/js.svg" layout="responsive" width={98} height={98} alt="tec5" className="mx-auto transition-transform transform group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
                         </div>
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative group">
-                            <Image src="/tec7.png" layout="responsive" width={98} height={98} alt="tec7" className="mx-auto transition-transform transform group-hover:scale-110" />
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-[32] lg:h-[32] relative group">
+                            <Image src="/vscode.svg" layout="responsive" width={98} height={98} alt="tec7" className="mx-auto transition-transform transform group-hover:scale-110" />
+                            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
+                        </div>
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-[32] lg:h-[32] relative group">
+                            <Image src="/vscode.svg" layout="responsive" width={98} height={98} alt="tec7" className="mx-auto transition-transform transform group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-4 -mt-4 gap-10 pl-10 sm:gap-20 sm:pl-20 md:gap-30 md:pl-30 lg:gap-40 lg:pl-40">
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative group">
-                            <Image src="/tec2.png" layout="responsive" width={98} height={98} alt="tec2" className="mx-auto transition-transform transform group-hover:scale-110" />
+                    <div className="grid grid-cols-5 -mt-4 gap-[187px] ml-40">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-[32] lg:h-[32] relative group">
+                            <Image src="/css.svg" layout="responsive" width={98} height={98} alt="tec2" className="mx-auto transition-transform transform group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
                         </div>
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative group">
-                            <Image src="/tec4.png" layout="responsive" width={98} height={98} alt="tec4" className="mx-auto transition-transform transform group-hover:scale-110" />
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-[32] lg:h-[32] relative group">
+                            <Image src="/c++.svg" layout="responsive" width={98} height={98} alt="tec4" className="mx-auto transition-transform transform group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
                         </div>
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative group">
-                            <Image src="/tec6.png" layout="responsive" width={98} height={98} alt="tec6" className="mx-auto transition-transform transform group-hover:scale-110" />
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-[32] lg:h-[32] relative group">
+                            <Image src="/react.svg" layout="responsive" width={98} height={98} alt="tec6" className="mx-auto transition-transform transform group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
                         </div>
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative group">
-                            <Image src="/tec8.png" layout="responsive" width={98} height={98} alt="tec8" className="mx-auto transition-transform transform group-hover:scale-110" />
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-[32] lg:h-[32] relative group">
+                            <Image src="/python.svg" layout="responsive" width={98} height={98} alt="tec8" className="mx-auto transition-transform transform group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
                         </div>
                     </div>

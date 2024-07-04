@@ -1,11 +1,11 @@
-// components/Card.js
 
+import Image from 'next/image';
 import React from 'react';
 
 const Card = ({imageUrl }) => {
     return (
-        <div className="py-6">
-            <img src={imageUrl} alt='company' className="h-8  rounded-lg" />
+        <div className="">
+            <Image src={imageUrl} alt='company' width={98} height={98} className="h-40 w-40" />
         </div>
     );
 };

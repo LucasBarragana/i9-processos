@@ -15,18 +15,15 @@ export default function About() {
                         className="deal lg:w-400 lg:h-400"
                     />
                 </div>
-                <div className="w-full lg:w-2/3 h-full flex flex-col justify-center items-center text-center px-10 md:px-20 text-white">
-                    <h3 className="mb-4 font-medium text-xs sm:text-base md:text-xl">A evolução para seu projeto está aqui</h3>
-                    <h1 className="mb-10 text-lg sm:text-xl md:text-5xl font-medium text-customPurple300">
+                <div className="w-full lg:w-2/3 h-full flex flex-col justify-center items-center text-center px-10 md:px-20 text-white mt-14 ">
+                    <h3 className="font-medium text-xs sm:text-base md:text-[30px] ">A evolução para seu projeto está aqui</h3>
+                    <h1 className="leading-tight text-[40px] w-[895px] my-[35px] font-semibold  text-customPurple300">
                         Somos uma empresa de desenvolvimento de software e outsourcing, sempre atualizada com as tendências 
                         do mercado e as necessidades dos clientes para oferecer o melhor serviço.
                     </h1>
-                    <h2 className="mb-10 text-base sm:text-lg md:text-3xl w-[80%]">
+                    <h2 className="text-base sm:text-lg md:text-[25px]  w-[520px]">
                         Trabalhamos com profissionais altamente disruptivos e com foco na resolução de problemas.
                     </h2>
-                    <button className=" text-xs md:text-xl text-white py-2 md:py-4 px-4 md:px-8 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out gradient-bg font-medium">
-                        Evolua sua Empresa
-                    </button>
                 </div>
             </div>
         </section>

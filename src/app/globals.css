@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+
+.font-alfa {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -72,7 +80,7 @@ body{
   background-position: center;
   height: 100%;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 
@@ -200,26 +208,32 @@ body{
 
 
 
+
 .card3, .card24, .card15 {
-  transition: scale 0.9s ease-in-out, z-index 0.9s ease-in-out, filter 0.9s ease-in-out, z-index 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out, z-index 0.9s ease-in-out, filter 0.9s ease-in-out;
 }
 
-
-.card3{
-  scale: 1;
-  z-index: 3;
+.card3 {
+  transform: scale(1);
+  z-index: 1000;
 }
 
-.card24{
-  scale:0.9;
-  z-index: 1;
+.card24 {
+  transform: scale(0.9);
+  z-index: 500;
   filter: blur(2px);
 }
 
-.card15{
-  scale:0.75;
-  z-index: auto;
+.card15 {
+  transform: scale(0.75);
+  z-index: 100;
   filter: blur(4px);
 }
+
+
+
+
+
+
 
 

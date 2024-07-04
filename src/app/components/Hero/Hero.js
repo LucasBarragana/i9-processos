@@ -15,21 +15,21 @@ export default function Hero() {
     };
 
     return (
-        <section id="Hero" className="pt-20 h-[90vh] w-[100vw] px-8 sm:px-10 lg:px-20">
+        <section id="Hero" className="pt-28 h-[90vh] w-[100vw] px-8 sm:px-10 lg:px-20">
             <div className={`hero-background`}>
                 <div className="h-full w-full flex flex-col justify-center items-start relative">
-                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-customBlue to-transparent opacity-100 rounded-3xl"></div>
-                    <div className="z-10 mx-20">
-                        <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-6xl font-bold mb-4  w-full md:w-[60%]  lg:w-[50%] text-white pt-10">
+                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-customBlue to-transparent opacity-100 rounded-[50px]"></div>
+                    <div className="z-10 mx-20 px-[150px]">
+                        <h1 className="font-alfa text-3xl sm:text-3xl md:text-4xl lg:text-4xl  xl:text-[3.125rem] font-bold mb-4 w-full md:w-[60%] lg:w-[50%] text-white pt-10 mb-[35px] xl:leading-tight">
                             Soluções inteligentes para empresas mais eficientes
                         </h1>
-                        <p className="text-sm sm:text-base md:text-lg lg:xl mb-8 text-white pb-10 w-full sm:w-[80%] md:w-[60%] lg:w-[40%]">
+                        <p className="text-sm sm:text-base md:text-lg lg:[30px] mb-[52px] text-white pb-10 w-full sm:w-[80%] md:w-[60%] lg:w-[40%] lg:leading-snug">
                             Estamos comprometidos em desenvolver
                             soluções digitais sob medida, focadas não
                             apenas em tecnologia, mas principalmente
                             na resolução eficaz de problemas.
                         </p>
-                        <button className="text-xs sm:text-xs md:text-base py-2 px-4 sm:py-3 sm:px-7 md:py-4 md:px-8 rounded-full text-white hover:bg-blue-700 transition duration-300 ease-in-out gradient-bg font-semibold" onClick={() => smoothScrollToSection('Hero')}>
+                        <button className="text-xs sm:text-xs md:text-[25px] py-2 px-4 sm:py-3 sm:px-7 md:py-4 md:px-8 rounded-full text-white hover:bg-blue-700 transition duration-300 ease-in-out gradient-bg font-semibold" onClick={() => smoothScrollToSection('Hero')}>
                             ENTRE EM CONTATO
                         </button>
                     </div>
