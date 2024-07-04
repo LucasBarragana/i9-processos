@@ -44,7 +44,7 @@ export default function Desktop() {
   return (
     <nav className="hidden lg:block w-[100vw]">
       <div className='fixed w-full top-0 z-50 h-[8px] bg-customPurple100'></div>
-      <div className='fixed w-[93%] ml-20 top-2 z-50 h-[79px] bg-customBlue100 shadow-lg flex items-center justify-between px-20 rounded-full'>
+      <div className='fixed w-[96%] ml-10 top-2 z-50 h-[79px] bg-customBlue100 shadow-lg flex items-center justify-between px-20 rounded-full'>
         <div className="flex items-center justify-between w-full px-10 text-xl">
           <button
             className={`nav-link ${activeSection === 'Hero' ? 'active' : ''} mx-2`}

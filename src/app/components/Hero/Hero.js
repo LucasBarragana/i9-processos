@@ -15,7 +15,7 @@ export default function Hero() {
     };
 
     return (
-        <section id="Hero" className="pt-28 h-[90vh] w-[100vw] px-8 sm:px-10 lg:px-20">
+        <section id="Hero" className="pt-28 h-[90vh] w-[100vw] px-8 sm:px-10 lg:px-12">
             <div className={`hero-background`}>
                 <div className="h-full w-full flex flex-col justify-center items-start relative">
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-customBlue to-transparent opacity-100 rounded-[50px]"></div>

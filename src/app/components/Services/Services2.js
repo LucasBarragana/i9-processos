@@ -55,7 +55,7 @@ export default function Services2() {
     };
 
     return (
-        <section id="Services2" className="relative w-[100vw] px-10 bg-gray-200 -skew-y-3 mt-14 py-20 hidden lg:block" 
+        <section id="Services" className="relative w-[100vw] px-2 bg-gray-200 -skew-y-3 mt-14 py-20 hidden lg:block" 
                  style={{ backgroundImage: "url('/fundo-services.png')", backgroundPosition: 'center' }}>
             <div className="absolute w-100 h-60 inset-0 bg-gradient-to-b from-white to-transparent "></div>
             <div className="relative skew-y-3 text-center pb-14">

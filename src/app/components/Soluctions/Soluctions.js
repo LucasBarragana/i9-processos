@@ -6,7 +6,7 @@ import 'react-circular-progressbar/dist/styles.css';
 
 export default function Soluctions() {
     return (
-        <section className="h-auto w-[100vw] xl:px-80 py-20 hidden lg:block">
+        <section className="h-[auto] w-[100vw] xl:px-80 py-20 hidden lg:block">
             <h1 className="font-alfa text-4xl font-semibold mb-20 text-center text-white">
                 Nos relacionamos com o ecossistema da sua <br />
                 empresa para inovar e atingir resultados extraordinários
@@ -15,7 +15,7 @@ export default function Soluctions() {
                 <div className="">
                     <div className='mb-10'>
                         <h1 className='font-alfa text-3xl font-semibold mb-6 text-customPurple300'>Mais De 24 Anos De Experiência, Oferecemos Serviços De TI</h1>
-                        <p className='text-white text-lg'>
+                        <p className='text-[25px] text-white'>
                             Visualize colaborativamente cadeias de
                             suprimentos amigáveis ​​ao usuário e imperativo
                             de unidade cruzada. Fabrique recursos
@@ -50,7 +50,7 @@ export default function Soluctions() {
                     </div>
                 </div>
                 <div className="flex justify-center items-center lg:justify-end">
-                    <Image src="/Subtract2.png" alt="fundo" layout="responsive" width={500} height={500} className="max-w-full h-auto" />
+                    <Image src="/Frame.svg" alt="fundo" layout="responsive" width={500} height={500} className="max-w-full h-auto" />
                 </div>
             </div>
         </section>

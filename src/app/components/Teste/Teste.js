@@ -6,13 +6,13 @@ import Image from 'next/image';
 const Carousel = () => {
   const slideRef = useRef(null);
   const states = [
-    { zIndex: 1, width: 447, height: 476, top: 69, left: 234, scale: 0.5, blur: '6px' },
-    { zIndex: 2, width: 447, height: 476, top: 59, left: 0, scale: 0.7, blur: '2px' },
-    { zIndex: 3, width: 447, height: 476, top: 35, left: 180, scale: 0.85, blur: '1px' },
-    { zIndex: 4, width: 447, height: 476, top: 0, left: 363, scale: 1, blur: '0px' },
-    { zIndex: 3, width: 447, height: 476, top: 35, left: 570, scale: 0.85, blur: '1px' },
-    { zIndex: 2, width: 447, height: 476, top: 59, left: 720, scale: 0.7, blur: '2px' },
-    { zIndex: 1, width: 447, height: 476, top: 69, left: 600, scale: 0.5, blur: '5px' },
+    { zIndex: 1, width: 447, height: 476, top: 69, left: 234, scale: 0.5, blur: '6px', opacity: 0 },
+    { zIndex: 2, width: 447, height: 476, top: 6, left: -100, scale: 0.7, blur: '2px', opacity: 1 },
+    { zIndex: 3, width: 447, height: 476, top: 12, left: 100, scale: 0.85, blur: '1px', opacity: 1 },
+    { zIndex: 4, width: 447, height: 476, top: 0, left: 400, scale: 1, blur: '0px', opacity: 1 },
+    { zIndex: 3, width: 447, height: 476, top: 12, left: 700, scale: 0.85, blur: '1px', opacity: 1 },
+    { zIndex: 2, width: 447, height: 476, top: 6, left: 900, scale: 0.7, blur: '2px', opacity: 1 },
+    { zIndex: 1, width: 447, height: 476, top: 69, left: 1100, scale: 0.5, blur: '5px', opacity: 0 },
   ];
 
   const contents = [
@@ -36,6 +36,7 @@ const Carousel = () => {
       li.style.left = `${state.left}px`;
       li.style.transform = `scale(${state.scale})`;
       li.style.filter = `blur(${state.blur})`;
+      li.style.opacity = state.opacity;
     });
   };
 
@@ -55,7 +56,7 @@ const Carousel = () => {
 
   return (
     <div className="relative w-[100%] h-[100%] mx-auto">
-      <ul ref={slideRef} className="relative w-[1080px] h-[100%] list-none m-0 p-0 mx-auto">
+      <ul ref={slideRef} className="relative w-[1240px] h-[100%] list-none mx-auto pl-40">
         {contents.map((content, index) => (
           <li key={index} className="absolute bg-white border-2 border-customPurple100 rounded-[50px] cursor-pointer transition-all duration-1000 ease-in-out flex items-center justify-center text-white p-4">
             <div className=''>

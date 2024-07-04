@@ -6,7 +6,7 @@ export default function Possibilits() {
     return (
         <section className="h-auto w-[100vw] px-10 mt-28  hidden lg:block">
             <div className="grid lg:grid-cols-2 h-full gap-4 bg-gradient-to-t from-customBlue100 to-transparent rounded-[50px] text-customPurple300 mx-10">                
-                <div className="px-32 ">
+                <div className="px-32 py-20">
                     <h1 className="font-alfa text-[50px] font-bold mb-10 leading-tight">Ilimitadas possibilidades na solução de problemas</h1>
                     <p className="w-[650px] text-[25px] font-semibold leading-tight pb-20">
                         Na i9 TI Solutions, contamos com uma equipe excepcionalmente experiente e altamente capacitada, 
