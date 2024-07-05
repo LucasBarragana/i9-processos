@@ -45,7 +45,7 @@ export default function Footer() {
                                 </div>
                             </div>
                             <div className="flex justify-end align-center mt-10">
-                                <div className="flex space-x-4">
+                                <div className="flex space-x-4 text-customPurple300">
                                     <Link href="/">
                                         <Image src="/whats2.svg" alt="whats" width={32} height={32} />
                                     </Link>
