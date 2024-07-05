@@ -1,10 +1,12 @@
 'use client'
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
 const Carousel = () => {
   const slideRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const states = [
     { zIndex: 1, width: 447, height: 476, top: 69, left: 234, scale: 0.5, blur: '6px', opacity: 0 },
     { zIndex: 2, width: 447, height: 476, top: 6, left: -100, scale: 0.7, blur: '2px', opacity: 1 },
@@ -43,12 +45,19 @@ const Carousel = () => {
   const next = () => {
     states.unshift(states.pop());
     move();
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % states.length);
+  };
+
+  const goToSlide = (index) => {
+    while (currentIndex !== index) {
+      next();
+    }
   };
 
   useEffect(() => {
     const interval = setInterval(next, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [currentIndex]);
 
   useEffect(() => {
     move();
@@ -83,6 +92,15 @@ const Carousel = () => {
           </li>
         ))}
       </ul>
+      <div className="absolute bottom-4 w-full flex justify-center">
+        {contents.map((_, index) => (
+          <button
+            key={index}
+            className={`w-4 h-4 rounded-full mx-2 ${currentIndex === index ? 'bg-customPurple100' : 'bg-gray-300'}`}
+            onClick={() => goToSlide(index)}
+          ></button>
+        ))}
+      </div>
     </div>
   );
 };

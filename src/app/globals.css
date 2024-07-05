@@ -6,7 +6,22 @@
 
 
 .font-alfa {
-  font-family: 'Alfa Slab One';
+  font-family: 'Alfa Slab One', sans-serif;
+}
+
+.font-alfa-regular {
+  font-family: 'Alfa Slab One', sans-serif;
+  font-weight: 400;
+}
+
+.font-alfa-semibold {
+  font-family: 'Alfa Slab One', sans-serif;
+  font-weight: 600;
+}
+
+.font-alfa-bold {
+  font-family: 'Alfa Slab One', sans-serif;
+  font-weight: 700;
 }
 
 
