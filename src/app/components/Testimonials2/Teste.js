@@ -1,12 +1,10 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 const Carousel = () => {
   const slideRef = useRef(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   const states = [
     { zIndex: 1, width: 447, height: 476, top: 69, left: 234, scale: 0.5, blur: '6px', opacity: 0 },
     { zIndex: 2, width: 447, height: 476, top: 6, left: -100, scale: 0.7, blur: '2px', opacity: 1 },
@@ -45,27 +43,20 @@ const Carousel = () => {
   const next = () => {
     states.unshift(states.pop());
     move();
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % states.length);
-  };
-
-  const goToSlide = (index) => {
-    while (currentIndex !== index) {
-      next();
-    }
   };
 
   useEffect(() => {
     const interval = setInterval(next, 3000);
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, []);
 
   useEffect(() => {
     move();
   }, []);
 
   return (
-    <div className="relative w-[100%] h-[100%] mx-auto">
-      <ul ref={slideRef} className="relative w-[1240px] h-[100%] list-none mx-auto pl-40">
+    <div className="relative w-full h-full mx-auto flex justify-center items-center">
+      <ul ref={slideRef} className="relative w-[1240px] h-full list-none m-0 p-0 flex justify-center items-center">
         {contents.map((content, index) => (
           <li key={index} className="absolute bg-white border-2 border-customPurple100 rounded-[50px] cursor-pointer transition-all duration-1000 ease-in-out flex items-center justify-center text-white p-4">
             <div className=''>
@@ -92,15 +83,6 @@ const Carousel = () => {
           </li>
         ))}
       </ul>
-      <div className="absolute bottom-4 w-full flex justify-center">
-        {contents.map((_, index) => (
-          <button
-            key={index}
-            className={`w-4 h-4 rounded-full mx-2 ${currentIndex === index ? 'bg-customPurple100' : 'bg-gray-300'}`}
-            onClick={() => goToSlide(index)}
-          ></button>
-        ))}
-      </div>
     </div>
   );
 };
